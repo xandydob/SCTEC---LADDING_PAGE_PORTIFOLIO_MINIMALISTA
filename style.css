@@ -1,0 +1,80 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;/* Remove a margem padrão do body */
+}
+
+header{
+    background-color: #170448;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));/* Responsividade */
+    gap:20px;/* Espaçamento entre os cards */
+    padding: 20px;
+}
+
+.content{
+    background-color: #1842fd7a;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: justify;
+   
+
+}
+
+p{
+    text-align: justify;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+ul {
+  margin: 15px 0;
+  padding-left: 0; /* remove espaço extra */
+}
+
+ul li {
+  list-style: none; /* remove bolinhas padrão */
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px; /* espaço para o ✔ */
+}
+
+ul li::before {
+  content: "✔"; /* marcador personalizado */
+  position: absolute;
+  left: 0;
+  color: #170448; /* cor do marcador */
+  font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #170448;
+    color:#fff
+}
+
+footer .contato {
+    margin-bottom: 15px; /* Espaço entre contatos e o parágrafo */
+}
+
+footer p.direitos {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+}
+
+
